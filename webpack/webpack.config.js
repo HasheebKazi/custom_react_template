@@ -14,6 +14,16 @@ module.exports = {
                 use: [{
                     loader: require.resolve('babel-loader')
                 }]
+            }, {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: ['style-loader', 'css-loader']
+            }, {
+                test: /\.(?:ico|png|jpe?g|gif)$/i,
+                type: 'asset/resource'
+            }, {
+                test: /\.(woff(2)?|eot|ttf|otf|svg)$/i,
+                type: 'asset/inline'
             }
         ]
     },
@@ -22,10 +32,6 @@ module.exports = {
         filename: 'bundle.js'
     },
     mode: 'development',
-    // devServer: {
-    //     contentBase: path.resolve(__dirname, '..', './build'),
-    //     hot: true
-    // },
     plugins: [
         new HtmlWebpackPlugin({ template: path.resolve(__dirname, '..', './src/index.html') })
     ]
