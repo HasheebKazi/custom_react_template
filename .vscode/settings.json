@@ -2,17 +2,17 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "editor.wordWrap": "on",
     // "editor.renderWhitespace": "all",
