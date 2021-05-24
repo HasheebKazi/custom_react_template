@@ -3,9 +3,9 @@ import shiba_image from './shiba_icon.png'
 import left_arrow from './left_arrow.svg'
 import { ClickCounter } from './ClickCounter'
 
-export const App = () => {
-    const x = 2
-
+export const App = (): React.ReactElement | null => {
+    const name = 'hash'
+    console.log(name)
     return (
         <>
             <h1>
